@@ -51,6 +51,9 @@ export default function App() {
             </ul>
           </nav>
         </div>
+        <div id="detail">
+          <Outlet />
+        </div>
 
         <ScrollRestoration />
         <Scripts />
