@@ -3,15 +3,27 @@ import type { FunctionComponent } from "react";
 
 import type { ContactRecord } from "../data";
 
-export default function Contact() {
-  const contact = {
-    first: "Your",
-    last: "Name",
+const contacts = [
+  {
+    first: "a",
+    last: "2",
     avatar: "https://avatars.githubusercontent.com/u/34266036",
-    twitter: "your_handle",
+    twitter: "https://x.com/A2hiro_tim",
     notes: "Some notes",
     favorite: true,
-  };
+  },
+  {
+    first: "Your",
+    last: "Friend",
+    avatar: "https://avatars.githubusercontent.com/u/34266026",
+    twitter: "your_friend",
+    notes: "Some notes",
+    favorite: false,
+  },
+];
+
+export default function Contact() {
+  const contact = contacts[1];
 
   return (
     <div id="contact">
